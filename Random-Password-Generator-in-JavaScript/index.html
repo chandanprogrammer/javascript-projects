@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Password Generator in JavaScript</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div>
+            <h2>Random Password Generator</h2>
+            <div class="box">
+                <span id="display">Password</span>
+                <div class="password-length">
+                    <label for="passwordLength">Password Length</label>
+                    <input type="number" name="passwordLength" id="passwordLength" value="6" min="4" max="24" >
+                </div>
+                <div class="upper-char">
+                    <label for="upperChar">Contains Uppercase</label>
+                    <input type="checkbox" name="upperChar" id="upperChar" checked>
+                </div>
+                <div class="lower-char">
+                    <label for="lowerChar">Contains Lowercase</label>
+                    <input type="checkbox" name="lowerChar" id="lowerChar" checked>
+                </div>
+                <div class="number-char">
+                    <label for="numberChar">Contains Numbers</label>
+                    <input type="checkbox" name="numberChar" id="numberChar" checked>
+                </div>
+                <div class="symbol-char">
+                    <label for="symbolChar">Contains Symbol</label>
+                    <input type="checkbox" name="symbolChar" id="symbolChar" checked>
+                </div>
+                <div class="btn">
+                    <input type="button" value="Generate" id="generate">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript Code  -->
+    <script src="script.js"></script>
+</body>
+
+</html>

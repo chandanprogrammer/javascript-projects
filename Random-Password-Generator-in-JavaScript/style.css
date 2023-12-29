@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+body {
+  background: #2980bb;
+}
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+  color: #fff;
+}
+.container h2 {
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 1.2em;
+}
+.box {
+  background: #287cb6;
+  width: 23vw;
+  padding: 20px;
+  box-shadow: 2px 2px 13px #000;
+  border-radius: 4px;
+}
+#display {
+  display: block;
+  width: 100%;
+  background: #fff;
+  color: #000;
+  padding: 8px 10px;
+  font-size: 1.1em;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow-x: auto;
+}
+::-webkit-scrollbar {
+  height: 5px;
+}
+::-webkit-scrollbar-thumb {
+  background: #9c9b9b;
+}
+::-webkit-scrollbar-track {
+  background: #fff;
+}
+.box div {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.pass-length input {
+  width: 15%;
+}
+.btn input {
+  width: 100%;
+  background: #314358;
+  border: none;
+  outline: none;
+  border-radius: 4px;
+  padding: 8px 0;
+  color: #fff;
+  font-size: 1.2em;
+  cursor: pointer;
+  font-weight: 600;
+}
+/* Mobile Responsive  */
+@media (max-width: 680px) {
+  .box {
+    width: 75vw;
+  }
+}

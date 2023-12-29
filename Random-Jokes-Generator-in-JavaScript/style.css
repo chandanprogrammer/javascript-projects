@@ -1,0 +1,24 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    background-color: #efefef;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+}
+#auto-jokes{
+    width: 40%;
+    font-size: 21px;
+    background: #fff;
+    margin: 20px;
+    padding: 20px;
+    border: 2px solid rgb(171, 169, 169);
+    border-radius: 20px;
+}

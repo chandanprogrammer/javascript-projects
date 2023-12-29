@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;500;600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Noto Sans', sans-serif;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    padding: 30px 40px;
+}
+.container h2{
+    font-size: 22px;
+    font-weight: 800;
+}
+.container h3{
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+.container p{
+    font-size: 14px;
+    width: 60%;
+}
+#passwordList{
+    margin: 20px 0px;
+}
+#passwordList table, tr, td, th{
+    border: 1px solid #000;
+    border-collapse: collapse;
+    padding: 6px 20px;
+}
+button{
+    background-color: #212121;
+    border: none;
+    color: #fff;
+    padding: 5px 10px;
+    font-size: 15px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+#submit{
+    margin-top: 12px;
+    margin-left: 100px;
+}
+#addPassword{
+    max-height: 10%;
+    overflow: hidden;
+}
+#addPassword div{
+    margin: 6px 10px;
+}
+.noFoundData{
+    padding: 10px;
+    color: blue;
+}
+tr td img{
+    width: 12px;
+    margin-left: 8px;
+    cursor: pointer;
+}
