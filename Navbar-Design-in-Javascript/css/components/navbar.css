@@ -1,0 +1,199 @@
+nav {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.4);
+  z-index: 101;
+  font-size: 16px;
+}
+.navbar {
+  background-color: var(--navbackground);
+  color: var(--navtext);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 80px;
+}
+.logo{
+  padding: 12px 0;
+}
+.logo img{
+  width: 170px;
+}
+.mobileMenuBar{
+  display: none;
+}
+.nav-link {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+.nav-link ul {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+.nav-link ul li {
+  list-style: none;
+  cursor: pointer;
+  padding: 14px 0;
+  margin: 0 2px;
+}
+.nav-link ul li a {
+  text-decoration: none;
+  color: var(--navtext);
+  font-weight: 600;
+  padding: 14px 14px;
+}
+.mobRespHome{
+  display: none;
+}
+.nav-link .active a {
+  color: var(--navactivetext);
+}
+.nav-link ul li a:hover {
+  color: var(--navhovertext);
+  background-color: var(--navhoverbacground);
+  transition: 0.3s;
+}
+.icon {
+  font-size: 22px;
+}
+.signBtn button {
+  font-family: "Mulish", sans-serif;
+  border: none;
+  background-color: var(--btnprimary);
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 6px 12px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+.signBtn button:hover {
+  background-color: var(--btnhover);
+  color: #efefef;
+  transition: 0.5s;
+}
+.user{
+  display: none;
+}
+.loginedIN > ul > li:nth-child(9) {
+  display: none;
+}
+.notLoginedIN > ul > li:nth-child(10) {
+  display: none;
+}
+.loginBox {
+  position: absolute;
+  top: 0;
+  background-color: rgba(53, 53, 53, 0.435);
+  height: 100vh;
+  width: 100vw;
+  align-items: center;
+  justify-content: center;
+  z-index: 102;
+  display: none;
+}
+.loginSignupContainer {
+  position: relative;
+  background-color: #fff;
+  width: 40vw;
+  height: 60vh;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px 80px;
+  justify-content: center;
+}
+.loginSignupContainer h2 {
+  font-size: 20px;
+}
+.loginSignupContainer > p {
+  font-size: 16px;
+  margin-bottom: 22px;
+}
+.loginSignupContainer a {
+  font-size: 14px;
+  margin-top: 18px;
+  margin-left: 50px;
+  text-decoration: none;
+  color: var(--navhovertext);
+}
+.signup{
+  margin-top: 13px;
+}
+.signup a{
+  margin-left: 3px;
+}
+.x-icon {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  cursor: pointer;
+}
+.x-cancle{
+  display: none;
+}
+.usernameBox input {
+  border: 1px solid rgba(192, 192, 192, 0.78);
+  padding: 8px 10px;
+  margin-bottom: 10px;
+}
+.passwordBox input {
+  border: 1px solid rgba(192, 192, 192, 0.78);
+  padding: 8px 10px;
+  margin-bottom: 10px;
+}
+
+
+@media (max-width: 720px) {
+  .mobileMenuBar {
+      display: block;
+      font-size: 22px;
+      cursor: pointer;
+    }
+.navbar {
+  padding: 0 30px;
+}
+.nav-link ul {
+  display: none;
+  align-items: start;
+  flex-direction: column;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  width: 80vw;
+  height: 100vh;
+  padding: 0;
+  margin: 0;
+  padding-left: 60px;
+  padding-top: 80px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.mobRespHome {
+  display: block;
+}
+.mobRespHomeSys {
+  display: none;
+}
+
+.loginSignupContainer{
+  width: 95vw;
+  padding: 0px 0px;
+}
+.x-cancle {
+  position: absolute;
+  top: 30px;
+  right: 40px;
+  cursor: pointer;
+  display: block;
+}
+}
+
+

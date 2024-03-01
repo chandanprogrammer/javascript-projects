@@ -1,0 +1,32 @@
+:root{
+
+    --navbackground: #fff;
+    --navtext: #000000;
+    --navactivetext: #000000;
+    --navhovertext: #006CE6;
+    --navhoverbacground: #f4f4f4;
+    --btnprimary: #0096c7;
+    --btnhover: #0077b6;
+
+    --footerbackground: #0B1325;
+    
+    --color1: #03045e;
+    --color2: #023e8a;
+    --color3: #d43d06;
+    --color4: #0096c7;
+    --color5: #00b4d8;
+    --color6: #48cae4;
+    --color7: #90e0ef;
+    --color8: #ade8f4;
+    --color9: #caf0f8;
+    --color10: #edf6f9;
+
+    --callSide: #1a936f;
+    /* --callSide: #BFDCCE; */
+    --putSide: #ef233c;
+    /* --putSide: #EBD0D1; */
+    --callSide2: #a1d2ba;
+    --putSide2: #e0b4b5;
+
+    --inTheMoneyBg: rgba(241, 238, 217, 0.823);
+}

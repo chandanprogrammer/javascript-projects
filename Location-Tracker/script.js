@@ -14,9 +14,7 @@ const getUserCurrentAddress = async (latitude, longitude) => {
     catch (error) {
         console.log(error);
     }
-
 }
-
 document.querySelector('.location-btn').addEventListener("click", (e) => {
     if (navigator.geolocation) {
         navigator.geolocation.getCurrentPosition((position) => {

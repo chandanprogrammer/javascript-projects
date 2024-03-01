@@ -1,0 +1,204 @@
+main {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 85px;
+  letter-spacing: 1px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+ /* ------ Header Section -------- */
+form {
+  margin: 10px 0;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  padding: 10px 60px;
+}
+.indexList {
+  margin-right: 20px;
+  display: flex;
+  flex-direction: column;
+}
+.indexList label{
+  margin-bottom: 6px;
+  font-weight: 700;
+}
+.indexExpiry{
+  display: flex;
+  flex-direction: column;
+}
+.indexExpiry label{
+  margin-bottom: 6px;
+  font-weight: 700;
+}
+.pcrVolume{
+  background-color: var(--color1);
+  color: #fff;
+  margin-left: 20px;
+  padding: 6px 14px;
+}
+.pcrOI{
+  background-color: var(--color2);
+  color: #fff;
+  margin-left: 20px;
+  padding: 6px 14px;
+}
+#current-price {
+  background-color: #212121;
+  color: #fff;
+  padding: 6px 15px;
+  /* margin: 10px 0; */
+}
+
+ /* --------- Table Section --------- */
+table {
+  border-collapse: collapse;
+  /* width: 100%; */
+  font-size: 14px;
+  font-weight: 500;
+}
+#tableData th,
+td,
+tr {
+  border: 1px solid #8181813f;
+  text-align: center;
+  padding: 6px 10px;
+}
+.strike-price {
+  background-color: var(--color3);
+  color: #fff;
+  font-weight: 700;
+}
+#tableData tr:nth-child(even) {
+  background-color: #e9ecef;
+}
+.call-side {
+  background-color: var(--callSide);
+  color: #fff;
+  text-shadow: 1px 1px rgba(0,0,0,0.3);
+}
+.put-side {
+  background-color: var(--putSide);
+  color: #fff;
+  text-shadow: 1px 1px rgba(0,0,0,0.3);
+}
+
+#tableData td {
+  position: relative;
+}
+.tablehead th{
+  background-color: var(--color3);
+  color: #fff;
+}
+hr {
+  border: 1.5px dashed #1674f6;
+}
+
+.imaginary_Line{
+  padding: 10px 0;
+  /* margin: 0; */
+  /* position: relative; */
+  background-color: #fff;
+  /* z-index: 10; */
+}
+.imaginary_Line div{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.imaginary_Line span{
+  background-color: #1674f6;
+  padding: 3px 6px;
+}
+
+.inTheMoneyCE td:nth-child(1){
+  background-color: var(--inTheMoneyBg);
+}
+.inTheMoneyCE td:nth-child(2){
+  background-color: var(--inTheMoneyBg);
+}
+.inTheMoneyCE td:nth-child(3){
+  background-color: var(--inTheMoneyBg);
+}
+.inTheMoneyCE td:nth-child(4){
+  background-color: var(--inTheMoneyBg);
+}
+.inTheMoneyPE td:nth-child(6){
+  background-color: var(--inTheMoneyBg);
+}
+.inTheMoneyPE td:nth-child(7){
+  background-color: var(--inTheMoneyBg);
+}
+.inTheMoneyPE td:nth-child(8){
+  background-color: var(--inTheMoneyBg);
+}
+.inTheMoneyPE td:nth-child(9){
+  background-color: var(--inTheMoneyBg);
+}
+.OIChangePer{
+  color: var(--callSide);
+}
+.OIChangePer .percentage{
+  text-align: right;
+  font-size: 10px;
+  color: #000;
+}
+
+.max_OI_CE td:nth-child(2){
+  background-color: var(--callSide);
+  color: #fff;
+  font-weight: 600;
+}
+.max_volume_CE td:nth-child(3){
+  background-color: var(--callSide);
+  color: #fff;
+  font-weight: 600;
+}
+.max_OI_PE td:nth-child(8){
+  background-color: var(--putSide);
+  color: #fff;
+  font-weight: 600;
+}
+.max_volume_PE td:nth-child(7){
+  background-color: var(--putSide);
+  color: #fff;
+  font-weight: 600;
+}
+.max_OI_CE_2 td:nth-child(2){
+  background-color: #ffff0096;
+  /* color: #fff; */
+  font-weight: 600;
+}
+.max_volume_CE_2 td:nth-child(3){
+  background-color: #ffff0096;
+  /* color: #fff; */
+  font-weight: 600;
+}
+.max_OI_PE_2 td:nth-child(8){
+  background-color: #ffff0096;
+  /* color: #fff; */
+  font-weight: 600;
+}
+.max_volume_PE_2 td:nth-child(7){
+  background-color: #ffff0096;
+  /* color: #fff; */
+  font-weight: 600;
+}
+.supportVolume td:nth-child(3){
+  background-color: #0d976e8a;
+}
+.supportOI td:nth-child(2){
+  background-color: #0d976e8a;
+}
+.resistanceVolume td:nth-child(7){
+  background-color: #ef233b92;
+}
+.resistanceOI td:nth-child(8){
+  background-color: #ef233b92;
+}
