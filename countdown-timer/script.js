@@ -1,4 +1,4 @@
-const endDate = "8 March 2025 0:00 AM";
+const endDate = "8 March 2028 0:00 AM";
 document.getElementById('end-date').innerHTML = endDate;
 const days = document.getElementById('days');
 const hours = document.getElementById('hours');
