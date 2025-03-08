@@ -1,0 +1,130 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #e7e7e7;
+  width: 100vw;
+  max-height: 100vh;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+#rating-main {
+  padding: 0 10em;
+  letter-spacing: 0.2px;
+}
+.review-heading {
+  text-align: center;
+}
+.review-heading h2 {
+  font-size: 42px;
+  margin: 1em;
+}
+
+#rating-box {
+  display: flex;
+  gap: 3em;
+}
+
+/* ------------- Rating left ------------- */
+.left-section {
+  width: 50%;
+}
+.left-input {
+  display: flex;
+  flex-direction: column;
+}
+.left-input label {
+  margin-bottom: 8px;
+  font-weight: 500;
+}
+.left-input input {
+  padding: 12px 14px;
+  border: 1px solid #5d5d5d;
+  border-radius: 6px;
+  margin-bottom: 1.2em;
+  font-size: 16px;
+  letter-spacing: 0.8px;
+}
+.left-input textarea {
+  padding: 12px 14px;
+  border: 1px solid #5d5d5d;
+  border-radius: 6px;
+  margin-bottom: 1.2em;
+  height: 100px;
+  font-size: 16px;
+}
+
+.submit-btn {
+  display: flex;
+  justify-content: end;
+  margin-right: 20px;
+}
+#submit-rating {
+  background-color: rgb(10, 104, 176);
+  padding: 8px 24px;
+  color: #fff;
+  font-size: 17px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+#star-rating i {
+  margin: 1px;
+  padding: 2px;
+  cursor: pointer;
+}
+#star-rating .fa-solid {
+  color: rgb(185, 170, 6);
+}
+
+/* ------------- Right section ------------- */
+.right-section {
+  width: 50%;
+  height: 70vh;
+  overflow-y: scroll;
+}
+.right-section h2 {
+  font-size: 20px;
+  margin-bottom: 20px;
+  color: rgb(1, 40, 104);
+}
+#rating-list {
+  color: #1a1a1a;
+  padding-right: 10px;
+}
+.review-title {
+  font-weight: 600;
+  font-size: 17px;
+}
+.review-message {
+  color: #272727;
+}
+.star-rating-display {
+  margin-top: 10px;
+}
+.star-rating-display i {
+  padding: 3px;
+  cursor: pointer;
+}
+.star-rating-display .fa-solid {
+  color: rgb(185, 170, 6);
+}
+.submit-date {
+  color: #4a4a4a;
+  font-size: 15px;
+  margin-top: 8px;
+}
+.submit-date span {
+  margin-left: 5px;
+  color: #0c34e4c2;
+  cursor: pointer;
+}
+.submit-date i {
+  padding: 3px;
+  cursor: pointer;
+}
+hr {
+  margin: 20px 0;
+}

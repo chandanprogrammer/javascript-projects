@@ -1,0 +1,77 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 18px;
+}
+
+#main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 5rem;
+}
+
+.enter-task {
+  width: 40vw;
+  margin-bottom: 25px;
+}
+#input-task {
+  width: 70%;
+  font-size: 18px;
+  padding: 10px 12px;
+  letter-spacing: 1px;
+}
+.add-task-btn {
+  width: auto;
+  padding: 12px 28px;
+  font-size: 18px;
+  background-color: rgb(18, 121, 125);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  letter-spacing: 1px;
+}
+#task-list {
+  width: 40vw;
+  height: 75vh;
+  overflow-y: scroll;
+}
+li {
+  position: relative;
+  max-width: 40vw;
+  list-style: none;
+  font-size: 18px;
+  letter-spacing: 0.5px;
+  margin: 6px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgb(224, 240, 254);
+  padding: 10px 24px;
+}
+li div {
+  background-color: rgb(224, 240, 254);
+  min-width: 100px;
+  position: absolute;
+  right: 0;
+  padding: 5px 20px;
+}
+.delete-task {
+  cursor: pointer;
+  font-size: 22px;
+  margin-left: 20px;
+}
+.edit-task {
+  margin-right: 20px;
+  cursor: pointer;
+}
+.task-content {
+  max-width: 28vw;
+  overflow-wrap: anywhere;
+}

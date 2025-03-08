@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Clock</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #212121;
+        color: #fff;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .clock-container {
+        background-color: #181818;
+        padding: 60px 80px;
+        border-radius: 8px;
+    }
+
+    #display-time {
+        font-size: 70px;
+        letter-spacing: 6px;
+        margin-bottom: 30px;
+        color: #41ff24;
+    }
+
+    #display-date {
+        text-align: center;
+        letter-spacing: 2px;
+        font-size: 22px;
+    }
+</style>
+
+<body>
+    <div class="clock-container">
+        <h1 id="display-time">00:00:00 AM</h1>
+        <p id="display-date">Loading date.....</p>
+    </div>
+</body>
+<script>
+
+    function setTimeDate() {
+        const timeElement = document.getElementById('display-time');
+        const dateElement = document.getElementById('display-date');
+
+        // let date = new Date();
+        // let localTime = date.toLocaleTimeString();
+        // timeElement.innerHTML = `${localTime}`;
+
+        const now = new Date();
+        let hours = now.getHours() % 12 || 12;
+        hours = hours < 10 ? `0${hours}` : `${hours}`
+        // const minutes = now.getMinutes() < 10 ? `0${now.getMinutes()}` : `${now.getMinutes()}`;
+        const minutes = now.getMinutes().toString().padStart(2, "0");
+        const seconds = now.getSeconds().toString().padStart(2, "0");
+        const ampm = now.getHours() < 12 ? "AM" : "PM";
+        timeElement.textContent = `${hours}:${minutes}:${seconds} ${ampm}`;
+        // in this section 'timeElement.textContent' used a proxy object
+
+        const options = {
+            weekday: "long",
+            year: "numeric",
+            month: "long",
+            day: "numeric"
+        }
+        const currentDate = now.toLocaleDateString(undefined, options);
+        dateElement.innerText = `${currentDate}`;
+    }
+
+    setInterval(setTimeDate, 1000);
+    setTimeDate();
+
+    // setInterval(() => {
+    //     setTimeDate()
+    // }, 1000);
+
+</script>
+
+</html>
