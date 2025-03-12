@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20vh;
+    letter-spacing: 0.5px;
+}
+.container h2{
+    margin-bottom: 1em;
+}
+#timeInput{
+    padding: 8px 10px;
+    font-size: 16px;
+}
+#startButton{
+    padding: 8px 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+#displayTime{
+    margin: 1.4em 0;
+    font-size: 18px;
+    font-weight: 500;
+}
+#resumePauseButton button{
+    padding: 8px 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
