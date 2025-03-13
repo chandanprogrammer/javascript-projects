@@ -15,12 +15,22 @@ body{
 }
 #auto-jokes{
     width: 40%;
+    min-height: 300px;
     font-size: 21px;
     background: #fff;
     margin: 20px;
     padding: 20px;
     border: 2px solid rgb(171, 169, 169);
     border-radius: 20px;
+}
+#click-button{
+    background-color: blueviolet;
+    color: #ffffff;
+    padding: 12px 22px;
+    font-size: 16px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
 }
 
 @media  screen and (max-width: 972px) {
