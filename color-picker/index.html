@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advance Color Picker</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="main">
+        <div class="container">
+            <h1 class="heading">Advance Color Picker</h1>
+            <div class="flex-row">
+                <input type="color" id="colorPicker">
+                <p id="color-code">#000000</p>
+                <button class="copy-color" id="copy-color" onclick={copyColorCode(this)}>Copy Color Code</button>
+            </div>
+            <button class="copy-color" id="save-color-button">Save Color</button>
+            <h1 class="heading">Saved Color</h1>
+            <div id="save-color-container"></div>
+            <h1 class="heading">Complementary Color</h1>
+            <div class="flex-row">
+                <div class="color-box" id="complementary-color-box"></div>
+                <p id="complementary-color-code">#ffffff</p>
+                <button class="copy-color" id="copy-complementary-color" onclick={copyColorCode(this)}>Copy Color
+                    Code</button>
+            </div>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>
